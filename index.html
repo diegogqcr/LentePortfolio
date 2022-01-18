@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El lente de Gamboa by DJGQ</title>
+    <meta name="description" content="Galeria web de fotos de Gamboa"> 
+    <meta name="author" content="Diego Gamboa Q [Front End developer]">
+    <meta name="keywords" content="foto, paisajes, costa rica, foto de playas, foto de montañas, foto urbana">    
+
+    <!--Prefech-->
+    <link rel="prefetch" href="cursos.html" as="document">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!---->
+    <link rel="preload" href="ttps://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+     <header class="header">
+
+        <div class="contenedor"> <!-- menu de navegación -->
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Lente de <span class="logo__bold">Gambo</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre</a>
+                    <a href="playas.html" class="navegacion__enlace">Playas</a>
+                    <a href="montanas.html" class="navegacion__enlace">Montañas</a>
+                    <a href="lugares.html" class="navegacion__enlace">Lugares</a>
+                        <!-- <a href="cursos.html" class="navegacion__enlace">Urbana</a> -->
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div><!-- .contenedor-->
+
+        <div class="header__texto"><!-- header del sitio -->
+            <h2 class="no-margin">Fotos, videos y más... desde mi lente.</h2>
+            <p class="no-margin">Una extracto de los hermosos lugares que he visitado</p>
+        </div><!-- .header texto-->
+     </header>
+     <div class="contenedor contenido-principal"> <!-- Contenedor principal  -->
+        <main class="blog">
+            <h3>Capturas de Costa Rica</h3>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture><!--para agregar la imagen .webp se agrega etiqueta picture y dentro source con la declaracion -->
+                        <!-- <source loading="lazy" srcset="img/blog1.webp" type="image/webp"> -->
+                        <img loading="lazy" src="img/Playas/Ballena/ballena1_djgq.jpg" alt="imagen blog"><!--Se agrega lazy para que el navegador carge las imagenes solo cuando las va requiriendo-->
+                    </picture><!--se ponen dentro de picture las imagenes que pueden ser cargadas por los navegadores-->
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Playas</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsam officia harum asperiores quod perspiciatis obcaecati, 
+                        neque exercitationem a numquam nesciunt ab, vero impedit minima animi iste ducimus omnis rerum?</p>
+                   <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>    
+                   </div><!--Entrada 1-->
+            </article>
+
+            <article class="entrada">
+               <div class="entrada__imagen">
+                   <picture>
+                       <!-- <source loading="lazy" srcset="img/blog2.webp" type="image/webp"> -->
+                       <img loading="lazy" src="img/Montaña/Cartago/cartago1_djgq.jpg" alt="imagen blog">
+                   </picture>
+               </div>
+
+               <div class="entrada__contenido">
+                   <h4 class="no-margin">Montañas</h4>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsam officia harum asperiores quod perspiciatis obcaecati, 
+                       neque exercitationem a numquam nesciunt ab, vero impedit minima animi iste ducimus omnis rerum?</p>
+                  <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>    
+                  </div><!--Entrada 2-->
+           </article>
+
+           <article class="entrada">
+               <div class="entrada__imagen">
+                   <picture>
+                       <!-- <source loading="lazy" srcset="img/blog3.webp" type="image/webp"> -->
+                       <img loading="lazy" src="img/Montaña/Finca la Lucha/lalucha1_djgq.jpg" alt="imagen blog">
+                   </picture>
+               </div>
+
+               <div class="entrada__contenido">
+                   <h4 class="no-margin">Lugares para visitar.</h4>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsam officia harum asperiores quod perspiciatis obcaecati, 
+                       neque exercitationem a numquam nesciunt ab, vero impedit minima animi iste ducimus omnis rerum?</p>
+                  <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>    
+                  </div><!--Entrada 3-->
+           </article>
+
+        </main><!--"blog main-->
+        <aside class="sidebar">
+            <h3>Servicios</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Foto y video aereas</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">personalizado</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                       <span class="widget-curso__info">20</span>
+                   </p>
+                   <a href="cursos.html" class="boton boton--secundario">Más Información sobre aereas</a>
+                </li>
+
+                <li class="widget-curso">
+                   <h4 class="no-margin">Sesión fotográfica</h4>
+                   <p class="widget-curso__label">Precio:
+                       <span class="widget-curso__info">personalizado</span>
+                   </p>
+                   <p class="widget-curso__label">Cupo:
+                      <span class="widget-curso__info">20</span>
+                  </p>
+                  <a href="cursos.html" class="boton boton--secundario">Más Información sobre sesión</a>
+               </li>
+            </ul>
+        </aside><!--sidebar-->
+    </div>
+     <footer class="footer">
+         <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Lente de <span class="logo__bold">Gambo</span></h1>
+                </a>
+
+               
+            </div>
+         </div>
+         <p class="derechos no-margin no-padding">Todos los derechos reservados, Lente de Gambo. by Diego Gamboa Quirós (DJGQ).</p>
+     </footer>
+
+     <script src="js/modernizr.js"></script> <!--Ayuda a mostar las imagenes webp con ese js-->
+
+</body>
+</html>
